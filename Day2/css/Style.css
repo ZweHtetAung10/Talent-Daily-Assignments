@@ -1,0 +1,44 @@
+.assignment{
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 20%;
+}
+
+.assignment-txt{
+    text-align: center;
+    line-height: 50px;
+}
+
+.assignment-txt h1{
+    font-family: cursive;
+    color: rgb(246, 246, 246);
+    font-size: 80px;
+   
+    
+}
+
+.assignment-txt >p{
+    line-height: 1.5;
+    font-family: cursive;
+    color:rgb(246, 246, 246);
+}
+
+.btn{
+    
+    background-color: rgb(67, 98, 142);
+    text-decoration: none;
+    font-size: 15px;
+    font-style: italic;
+    padding: 20px 90px;
+    border: none;
+    border-radius: 50px;
+    color: rgb(246, 246, 246);
+    cursor: pointer;
+}
+
+
+
+
+
+
