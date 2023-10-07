@@ -132,6 +132,7 @@ header {
 }
 .bloc-card .card .card__img {
   position: relative;
+  height: 250px;
 }
 .bloc-card .card .card__img .catagory {
   color: #000;
@@ -159,6 +160,11 @@ header {
   color: #888484;
   font-size: 10px;
   text-align: center;
+}
+
+img {
+  width: 100%;
+  height: 100%;
 }
 
 .p-foot {
