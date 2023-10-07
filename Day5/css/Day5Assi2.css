@@ -98,17 +98,19 @@ header {
 .prj-warp .image-title p {
   color: #fff;
   margin-bottom: 100px;
+  line-height: 20px;
 }
 
 .slider {
   width: 800px;
   margin: 0 auto;
   background-color: #000;
+  position: relative;
 }
 .slider .slider__heading {
   width: 50%;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .slider .slider__heading h2 {
   color: #fff;
@@ -116,11 +118,22 @@ header {
   font-weight: 500;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 .slider .slider__heading p {
   color: #fff;
   text-align: center;
+  line-height: 20px;
+}
+.slider .arrow {
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+  width: 10%;
+  position: absolute;
+  right: 0;
+  top: 110px;
+  margin-right: 10px;
 }
 
 .bloc-card {
@@ -172,7 +185,7 @@ img {
 }
 
 footer {
-  background-color: #3f3630;
+  background-color: rgb(40, 40, 40);
 }
 
 .container__foot {
@@ -206,4 +219,10 @@ footer {
 }
 .inner-container2 .adr address {
   font-size: 15px;
+}
+
+@media screen and (max-width: 400px) {
+  .prj-warp {
+    width: 400px;
+  }
 }/*# sourceMappingURL=Day5Assi2.css.map */
