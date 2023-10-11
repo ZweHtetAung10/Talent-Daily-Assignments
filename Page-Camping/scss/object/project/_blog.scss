@@ -1,0 +1,48 @@
+
+.c-bloc-card {
+    display: flex;
+    justify-content: space-between;
+    width: 1400px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    
+
+    .card {
+        position: relative;
+        width: 357px;
+        background-color: #FFFFFF;
+        border-radius: 40px;
+        margin: 0 10px;
+        
+        .inner-card {
+            padding: 60px 40px;
+
+            .inner-card__img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                 max-width: 100%;
+                }
+            }
+
+            .inner-card__txt {
+
+                h3 {
+                    font-size: 18px;
+                    font-family: 'Archivo Black', sans-serif;
+                    text-align: center;
+                    padding: 15px;
+                }
+
+                p {
+                    font-size: 16px;
+                    font-family: 'Roboto', sans-serif;
+                    line-height: 20px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

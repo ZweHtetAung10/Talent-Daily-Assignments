@@ -1,0 +1,98 @@
+.warp-foot {
+    background-color: #F8E1DB;
+    border-top-left-radius: 110px;
+    border-top-right-radius: 110px;
+    position: relative;
+    .icon-setup{
+        position: absolute;
+        right: 150px;
+        top: -20px;
+        background-color: #fff;
+        border-radius: 15px;
+        a{
+            display: block;
+            padding: 10px 15px;
+            color: #3B3735;
+            transform: scale(1.4s);
+        }
+        &:hover{
+            background-color: #3B3735;
+            border: 1px solid #fff;
+            a{
+                transition: all 1.4s ease ;
+                color: #fff;
+            }
+        }
+    }
+    .end-warp { 
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 40px 40px;
+
+        .end-warp__inner {
+            display: flex;
+            width: calc(95% / 2);
+            margin: 0 auto;
+
+            .end-warp__inner__left {
+                margin: 0 auto;
+                width: 600px;
+
+                h3 {
+
+                    margin-bottom: 20px;
+                    line-height: 20px;
+                    font-weight: 700;
+                    font-family: 'Archivo', sans-serif;
+                    font-size: 16px;
+                }
+
+                p {
+                    color: #3B3735;
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+
+        .end-warp__inner__right {
+            width: calc(100% / 3);
+            h3 {
+                margin-bottom: 20px;
+                line-height: 20px;
+                font-weight: 700;
+                font-family: 'Archivo', sans-serif;
+                font-size: 14px;
+            }
+
+            ul {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+                
+
+                li {
+                    a {
+                        color: #3B3735;
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 14px;
+                        line-height: 20px;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    address {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        text-align: center;
+        color: #3B3735;
+        height: 70px;
+    }
+}
