@@ -16,6 +16,7 @@
             transform: scale(1.4s);
         }
         &:hover{
+            transition: all 1.4s ease ;
             background-color: #3B3735;
             border: 1px solid #fff;
             a{

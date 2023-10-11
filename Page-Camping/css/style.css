@@ -439,6 +439,7 @@ body {
   transform: scale(1.4s);
 }
 .warp-foot .icon-setup:hover {
+  transition: all 1.4s ease;
   background-color: #3B3735;
   border: 1px solid #fff;
 }
