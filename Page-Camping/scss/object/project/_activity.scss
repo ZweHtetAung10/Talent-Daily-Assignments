@@ -28,15 +28,15 @@
             justify-content: space-between;
             width: 1400px;
             margin: 0 auto;
-            margin-bottom: 20px;
+            
         .main-warp {
                 background-color: #FFFFFF;
                 border-radius: 30px;
-                margin-right: 20px;
+                margin: 20px;
                 padding: 20px;
     
             
-            .main-warp__inner {
+            &__inner {
                 .inner__warp__imgbox {
                     width: 100%;
                     position: relative;
@@ -160,6 +160,7 @@
     border-radius: 30px;
     background-image: url(../../../img/backcolor.png);
     margin-bottom: 80px;
+    
 
     .email-warp__inner {
         width: 95%;
@@ -177,7 +178,7 @@
                 border-radius: 15px;
                 position: absolute;
                 top: 30px;
-                right: 70px;
+                right: 0;
             }
            
         }
@@ -200,7 +201,7 @@
             }
 
             input {
-                width: 500px;
+                width: 100%;
                 padding: 20px;
                 margin: 20px 0;
                 border-radius: 10px;
@@ -208,5 +209,34 @@
             }
         }
 
+    }
+}
+
+@media screen and (max-width:800px){
+    .main-activity{
+        width: 800px;
+        
+        .bloc{
+            width: 100%;
+            flex-wrap: wrap;
+            .main-warp{
+                width: 300px;
+            }
+        }
+    }
+    .email-warp{
+        width: 100%;
+        .email-warp__inner{
+        flex-direction: column-reverse;
+        }
+
+        .email-warp__inner__heading{
+            h1{
+                text-align: center;
+            }
+            p{
+                text-align: center;
+            }
+        }
     }
 }

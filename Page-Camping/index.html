@@ -14,13 +14,12 @@
     <header class="p-head">
         <div class="p-head-container">
             <div class="p-head__nav">
-                <div>
+                <div class="logo">
                     <h1><a href="/" target="_self"><img src="img/logo.png" alt=""></a></h1>
                 </div>
-
-                <nav>
+                <nav class="nav-bar hidden">
                     <ul>
-                        <li><a href="" target="_self">Home</a></li>
+                        <li><a class="active" target="_self">Home</a></li>
                         <li><a href="" target="_self">Destination</a></li>
                         <li><a href="" target="_self">Near me</a></li>
                         <li><a href="" target="_self">Events</a></li>
@@ -28,6 +27,12 @@
                         <li><a href="" target="_self">Gallery</a></li>
                         <li><a href="" target="_self">About</a></li>
                         <li><a href="" target="_self">Contant us</a></li>
+                        <li class="p-head__sign2">
+                            <a href="" target="_self" class="p-head__btn">Sign up</a>
+                        </li>
+                        <li class="p-head__sign2">
+                            <a href="" target="_self" class="p-head__btn p-head__btn--active">Sign in</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -35,18 +40,22 @@
                 <div class="p-head__btn"> <a href="" target="_self">Sign up</a></div>
                 <div class="p-head__btn p-head__btn--active"><a href="" target="_self">Sign in</a></div>
             </div>
+            <div class="menu-bar menu-bg">
+                <a href="/" class="menuIcon"><i class="fa-solid fa-bars"></i></a>
+            </div>
         </div>
+        
     </header>
-
+    
     <div class="main-visual">
         <div class="main-visual__txt">
             <h1>Find Yourself Outside.</h1>
             <p>Book unique camping experiance on over 300,000 campsites, cabins, RV parks, public parks and more.</p>
             <div class="main-visual__btn"><a href="">Discover</a></div>
         </div>
-
+        
     </div>
-
+    
     <section class="c-bloc-card">
         <div class="card">
             <div class="inner-card">
@@ -59,7 +68,7 @@
                 </div>
             </div>
         </div>
-
+        
         <div class="card">
             <div class="inner-card">
                 <div class="inner-card__img">
@@ -83,7 +92,7 @@
                 </div>
             </div>
         </div>
-
+        
         <div class="card">
             <div class="inner-card">
                 <div class="inner-card__img">
@@ -96,7 +105,7 @@
             </div>
         </div>
     </section>
-
+    
     <section class="main-activity">
         <div class="main-activity__heading">
             <img src="img/pic5.png" alt="pic5">
@@ -119,7 +128,7 @@
                     </div>
                 </div>
             </div>
-
+            
             <div class="main-warp">
                 <div class="main-warp__inner">
                     <div class="inner__warp__imgbox">
@@ -206,7 +215,7 @@
                     </div>
                 </div>
             </div>
-
+            
             <div class="main-warp">
                 <div class="main-warp__inner">
                     <div class="inner__warp__imgbox">
@@ -223,7 +232,7 @@
                     </div>
                 </div>
             </div>
-
+            
             <div class="main-warp">
                 <div class="main-warp__inner">
                     <div class="inner__warp__imgbox">
@@ -258,7 +267,7 @@
                     </div>
                 </div>
             </div>
-
+            
             <div class="main-warp">
                 <div class="main-warp__inner">
                     <div class="inner__warp__imgbox">
@@ -275,7 +284,7 @@
                     </div>
                 </div>
             </div>
-
+            
             <div class="main-warp">
                 <div class="main-warp__inner">
                     <div class="inner__warp__imgbox">
@@ -292,7 +301,7 @@
                     </div>
                 </div>
             </div>
-
+            
             <div class="main-warp">
                 <div class="main-warp__inner">
                     <div class="inner__warp__imgbox">
@@ -311,10 +320,10 @@
             </div>
         </div>
         <div class="main-activity__btn">
-            <a href="">View Morw</a>
+            <a href="">View More</a>
         </div>
     </section>
-
+    
     <section class="email-warp">
         <img src="" alt="">
         <div class="email-warp__inner">
@@ -327,13 +336,13 @@
                     <img src="img/send.png" alt="send">
                 </div>
             </div>
-           
+            
             <div class="email-warp__inner__img">
                 <img src="img/house.png" alt="">
             </div>
         </div>
     </section>
-
+    
     <footer class="warp-foot" >
         <div class="icon-setup">
             <a href="#" target="_self" ><i class="fa-solid fa-arrow-up"></i></a>
@@ -354,7 +363,7 @@
                     </div>
                 </div>
             </div>
-
+            
             <div class="end-warp__inner">
                 <div class="end-warp__inner__right">
                     <h3 class="heading">Get to Know us</h3>
@@ -391,6 +400,7 @@
         <address>@2020. All rights reserved</address>
     </footer>
     
+    <script src="js/main.js"></script>
 </body>
 
 </html>

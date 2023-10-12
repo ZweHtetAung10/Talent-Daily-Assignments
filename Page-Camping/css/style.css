@@ -85,7 +85,7 @@ body {
   align-items: center;
 }
 .p-head__nav h1 {
-  padding: 16px;
+  margin: 16px;
 }
 .p-head__nav nav ul {
   display: flex;
@@ -96,6 +96,19 @@ body {
   font-size: 18px;
   font-family: "Roboto", sans-serif;
   color: #D2D2D2;
+}
+.p-head__nav nav ul li:hover a {
+  color: #fff;
+}
+.p-head__nav nav ul li .active::after {
+  content: "";
+  width: 60%;
+  height: 3px;
+  background-color: #E76F51;
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  transform: translateY(-50%) rotate(45deg);
 }
 
 .p-head__sign {
@@ -134,6 +147,108 @@ body {
   border: 1px solid #fff;
 }
 
+.p-head__sign2 {
+  display: none;
+}
+
+.menu-bar {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .p-head {
+    width: 800px;
+  }
+  .p-head-container {
+    width: 95%;
+  }
+  .p-head-container .p-head__nav .hidden {
+    display: none;
+  }
+  .p-head-container .p-head__nav .nav-bar {
+    position: absolute;
+    right: -10px;
+    top: 85px;
+    border: 2px solid #000;
+    background-color: #000;
+    border-radius: 30px;
+    width: 320px;
+  }
+  .p-head-container .p-head__nav .nav-bar ul {
+    flex-direction: column;
+  }
+  .p-head-container .p-head__nav .nav-bar ul .p-head__sign2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .p-head-container .p-head__nav .nav-bar ul .p-head__sign2 .p-head__btn {
+    display: flex;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+  }
+  .p-head-container .p-head__nav .nav-bar ul .p-head__sign2 .p-head__btn > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 50px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    transform: scale(1.4s);
+  }
+  .p-head-container .p-head__nav .nav-bar ul .p-head__sign2 .p-head__btn:hover {
+    transition: all 1.4s ease;
+    background-color: #000;
+  }
+  .p-head-container .p-head__nav .nav-bar ul .p-head__sign2 .p-head__btn:hover a {
+    transition: all 1.4s ease;
+    color: #fff;
+  }
+  .p-head-container .p-head__nav .nav-bar ul .p-head__sign2 .p-head__btn--active {
+    border: 1px solid #fff;
+  }
+  .p-head-container .p-head__nav .nav-bar ul li a {
+    display: block;
+    line-height: 40px;
+    color: #fff;
+    transform: scale(1.4s);
+  }
+  .p-head-container .p-head__nav .nav-bar ul li:hover {
+    transition: all ease 1.4s;
+    background-color: #fff;
+    border-radius: 30px;
+  }
+  .p-head-container .p-head__nav .nav-bar ul li:hover a {
+    border-radius: 20px;
+    color: #000;
+  }
+  .p-head-container .p-head__nav .nav-bar ul li .active::after {
+    display: none;
+  }
+  .p-head__sign {
+    display: none;
+  }
+  .menu-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 16px;
+  }
+  .menu-bar a {
+    border-radius: 20px;
+    background-color: #fff;
+    display: block;
+    padding: 20px;
+    color: #000;
+  }
+}
 .main-visual {
   display: flex;
   justify-content: center;
@@ -227,25 +342,24 @@ body {
   justify-content: space-between;
   width: 1400px;
   margin: 0 auto;
-  margin-bottom: 20px;
 }
 .main-activity .bloc .main-warp {
   background-color: #FFFFFF;
   border-radius: 30px;
-  margin-right: 20px;
+  margin: 20px;
   padding: 20px;
 }
-.main-activity .bloc .main-warp .main-warp__inner .inner__warp__imgbox {
+.main-activity .bloc .main-warp__inner .inner__warp__imgbox {
   width: 100%;
   position: relative;
   margin-bottom: 20px;
 }
-.main-activity .bloc .main-warp .main-warp__inner .inner__warp__imgbox img {
+.main-activity .bloc .main-warp__inner .inner__warp__imgbox img {
   display: block;
   border-radius: 15px;
   width: 100%;
 }
-.main-activity .bloc .main-warp .main-warp__inner .inner__warp__imgbox p {
+.main-activity .bloc .main-warp__inner .inner__warp__imgbox p {
   color: #E76F51;
   background-color: #FFFFFF;
   border-radius: 10px;
@@ -254,7 +368,7 @@ body {
   left: 100px;
   padding: 15px;
 }
-.main-activity .bloc .main-warp .main-warp__inner .inner__warp__imgbox .heart {
+.main-activity .bloc .main-warp__inner .inner__warp__imgbox .heart {
   right: 20px;
   top: 20px;
   position: absolute;
@@ -262,38 +376,38 @@ body {
   padding: 10px 5px;
   border-radius: 10px;
 }
-.main-activity .bloc .main-warp .main-warp__inner .inner__warp__imgbox .heart > a {
+.main-activity .bloc .main-warp__inner .inner__warp__imgbox .heart > a {
   color: #E76F51;
   right: 60px;
   top: 61px;
   padding: 8px;
   border-radius: 10px;
 }
-.main-activity .bloc .main-warp .main-warp__inner .inner__warp__txtbox {
+.main-activity .bloc .main-warp__inner .inner__warp__txtbox {
   width: 90%;
   margin: 0 auto;
   margin-bottom: 40px;
 }
-.main-activity .bloc .main-warp .main-warp__inner .inner__warp__txtbox h3 {
+.main-activity .bloc .main-warp__inner .inner__warp__txtbox h3 {
   font-family: "Archivo", sans-serif;
   font-weight: 600;
   font-size: 18px;
   text-align: center;
   line-height: 20px;
 }
-.main-activity .bloc .main-warp .main-warp__inner .inner__warp__txtbox p {
+.main-activity .bloc .main-warp__inner .inner__warp__txtbox p {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   text-align: center;
   line-height: 20px;
   padding: 10px;
 }
-.main-activity .bloc .main-warp .main-warp__inner .inner__warp__txtbox .warp__txtbox__btn {
+.main-activity .bloc .main-warp__inner .inner__warp__txtbox .warp__txtbox__btn {
   margin: 20px;
   background-color: rgba(141, 141, 141, 0.5);
   border-radius: 30px;
 }
-.main-activity .bloc .main-warp .main-warp__inner .inner__warp__txtbox .warp__txtbox__btn a {
+.main-activity .bloc .main-warp__inner .inner__warp__txtbox .warp__txtbox__btn a {
   display: block;
   text-align: center;
   padding: 20px;
@@ -302,11 +416,11 @@ body {
   color: #8D8D8D;
   transform: scale(1.4s);
 }
-.main-activity .bloc .main-warp .main-warp__inner .inner__warp__txtbox .warp__txtbox__btn:hover {
+.main-activity .bloc .main-warp__inner .inner__warp__txtbox .warp__txtbox__btn:hover {
   transition: all 1.4s ease;
   background-color: #000;
 }
-.main-activity .bloc .main-warp .main-warp__inner .inner__warp__txtbox .warp__txtbox__btn:hover a {
+.main-activity .bloc .main-warp__inner .inner__warp__txtbox .warp__txtbox__btn:hover a {
   color: #fff;
 }
 .main-activity .main-activity__btn {
@@ -356,7 +470,7 @@ body {
   border-radius: 15px;
   position: absolute;
   top: 30px;
-  right: 70px;
+  right: 0;
 }
 .email-warp .email-warp__inner .email-warp__inner__heading {
   width: 45%;
@@ -374,13 +488,37 @@ body {
   font-family: "Roboto", sans-serif;
 }
 .email-warp .email-warp__inner .email-warp__inner__heading input {
-  width: 500px;
+  width: 100%;
   padding: 20px;
   margin: 20px 0;
   border-radius: 10px;
   border: none;
 }
 
+@media screen and (max-width: 800px) {
+  .main-activity {
+    width: 800px;
+  }
+  .main-activity .bloc {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .main-activity .bloc .main-warp {
+    width: 300px;
+  }
+  .email-warp {
+    width: 100%;
+  }
+  .email-warp .email-warp__inner {
+    flex-direction: column-reverse;
+  }
+  .email-warp .email-warp__inner__heading h1 {
+    text-align: center;
+  }
+  .email-warp .email-warp__inner__heading p {
+    text-align: center;
+  }
+}
 .c-bloc-card {
   display: flex;
   justify-content: space-between;
@@ -419,33 +557,45 @@ body {
   text-align: center;
 }
 
-.warp-foot {
-  background-color: #F8E1DB;
-  border-top-left-radius: 110px;
-  border-top-right-radius: 110px;
-  position: relative;
+@media screen and (max-width: 800px) {
+  .c-bloc-card {
+    flex-wrap: wrap;
+    width: 700px;
+  }
+  .c-bloc-card .card {
+    width: 320px;
+    margin: 20px 0;
+  }
 }
-.warp-foot .icon-setup {
+.icon-setup {
   position: absolute;
   right: 150px;
   top: -20px;
   background-color: #fff;
   border-radius: 15px;
+  z-index: 1;
 }
-.warp-foot .icon-setup a {
+.icon-setup a {
   display: block;
   padding: 10px 15px;
   color: #3B3735;
   transform: scale(1.4s);
 }
-.warp-foot .icon-setup:hover {
+.icon-setup:hover {
   transition: all 1.4s ease;
   background-color: #3B3735;
   border: 1px solid #fff;
 }
-.warp-foot .icon-setup:hover a {
+.icon-setup:hover a {
   transition: all 1.4s ease;
   color: #fff;
+}
+
+.warp-foot {
+  background-color: #F8E1DB;
+  border-top-left-radius: 110px;
+  border-top-right-radius: 110px;
+  position: relative;
 }
 .warp-foot .end-warp {
   margin: 0 auto;
